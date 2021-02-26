@@ -39,6 +39,7 @@ body {
 }
 
 .title {
+    max-width: 30rem;
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 2.25rem;
@@ -418,6 +419,24 @@ body {
     bottom: 0;
     left: 0;
     z-index: -1;
+}
+
+.header__title,
+.header__subtitle,
+.title,
+.sending-sms__username,
+.outbound-sms__username,
+.outbound-sms__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.advantages__title {
+    -webkit-line-clamp: 5;
 }
 
 @media (max-width: 1230px) {
