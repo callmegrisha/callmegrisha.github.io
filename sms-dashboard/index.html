@@ -53,10 +53,10 @@
                         </ul>
                     </nav>
                     <div class="header__signin ml-auto">
-                        <a class="header__link--login font-semibold mr-8 outline-none" href="#">Login</a>
-                        <button class="trial-button text-white p-5 hover:bg-blue-700 focus:bg-blue-900 focus:outline-none" type="button">
+                        <button class="header__login font-semibold mr-8 outline-none" type="button">Login</button>
+                        <a class="button trial-button text-white p-5 hover:bg-blue-700 focus:bg-blue-900 focus:outline-none" href="#free-trial">
                             Start Free Trial
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -65,12 +65,12 @@
             <h1 class="header__title font-bold mb-8">Welcome to your personal SMS Dashboard</h1>
             <p class="header__subtitle mb-7">Tempor minim anim eiusmod occaecat eu. In labore veniam incididunt mollit commodo nostrud non ex occaecat occaecat deserunt magna quis veniam. </p>
             <div class="header__options flex">
-                <button class="trial-button text-white p-5 hover:bg-blue-700 focus:bg-blue-900 focus:outline-none mr-2.5" type="button">
+                <a class="button trial-button text-white p-5 hover:bg-blue-700 focus:bg-blue-900 focus:outline-none mr-2.5" href="#free-trial">
                     Start Free Trial
-                </button>
-                <button class="discover-button text-white p-5 bg-white focus:bg-blue-900 focus:text-white focus:outline-none hover:bg-blue-700 hover:text-white" type="button">
+                </a>
+                <a class="button discover-button text-white p-5 bg-white focus:bg-blue-900 focus:text-white focus:outline-none hover:bg-blue-700 hover:text-white" href="#sending-sms">
                     Discover
-                </button>
+                </a>
             </div>
         </div>
     </header>
@@ -90,7 +90,7 @@
             </div>
         </div>
 
-        <section class="free-trial py-10">
+        <section class="free-trial py-10" id="free-trial">
             <div class="container">
                 <div class="free-trial__inner relative">
                     <h2 class="title free-trial__title pt-20 mb-4">Set up FREE Trial Account</h2>
@@ -108,7 +108,7 @@
                             <span class="block mb-2.5">Your Email</span>
                             <input class="free-trial__input" type="email" placeholder="Write here your email address">
                         </label>
-                        <button class="trial-button text-white p-5 hover:bg-blue-700 focus:bg-blue-900 focus:outline-none mr-2.5" type="button">
+                        <button class="trial-button--submit text-white p-5 hover:bg-blue-700 focus:bg-blue-900 focus:outline-none mr-2.5 inline-block" type="submit">
                             Start Free Trial
                         </button>
                     </form>
@@ -158,7 +158,7 @@
             </div>
         </section>
 
-        <section class="sending-sms py-28">
+        <section class="sending-sms py-28" id="sending-sms">
             <div class="container">
                 <div class="sending-sms__inner flex justify-around items-center">
                     <div class="sending-sms__intro max-w-lg">
@@ -212,6 +212,22 @@
         </section>
 
     </main>
+
+    <div class="modal">
+        <form class="modal__content border-2 p-7 rounded-2xl bg-white absolute" action="#">
+            <label class="block mb-5">
+                <span class="block mb-2.5">Your Email</span>
+                <input class="free-trial__input" type="email" placeholder="Email">
+            </label>
+            <label class="block mb-5">
+                <span class="block mb-2.5">Your Password</span>
+                <input class="free-trial__input" type="password" placeholder="Password">
+            </label>
+            <button class="login-button text-white p-5 bg-blue-500 hover:bg-blue-700 focus:bg-blue-900 focus:outline-none mr-2.5 rounded-3xl" type="button">
+                Login
+            </button>
+        </form>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
