@@ -1,41 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col col-lg-12 text-center">
-                <h1>Получаем прогноз погоды по API</h1>
-                <h2>JavaScript v2.0. Урок 14</h2>
-                <h3>js2.itgid.info</h3>
-            </div>
-        </div>
-
-        <div class="pricing-table row">
-            <div class="package featured">
-                <p class="package-name">Kiev</p>
-                <hr>
-                <p class="price">10&deg;</p>
-                <p class="disclaimer">Clouds</p>
-                <hr>
-                <ul class="features">
-                    <li>Feature 1</li>
-                </ul>
-                <button class="button-primary">Go</button>
-            </div>
-        </div>
-
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="intro">
+      <div class="intro__media"></div>
     </div>
-    <script src="script.js"></script>
-</body>
+    <header class="header">
+      <div class="header__media">
+        <video
+          class="header__video"
+          src="./video/raining.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+      </div>
+      <div class="container">
+        <div class="header__inner">
+          <form class="geo-form">
+            <select class="cities">
+              <option selected>Выберите город</option>
+            </select>
+            <input
+              type="number"
+              class="geo-form__input geo-form__input--latitude"
+              placeholder="Введите широту"
+            />
+            <input
+              type="number"
+              class="geo-form__input geo-form__input--longitude"
+              placeholder="Введите долготу"
+            />
+            <input
+              type="number"
+              class="geo-form__input geo-form__input--cities"
+              placeholder="Введите количество городов"
+            />
+            <button class="geo-form__btn geo-form__btn--add" type="button">
+              Отправить
+            </button>
+            <button class="geo-form__btn geo-form__btn--delete" type="button">
+              Очистить список
+            </button>
+          </form>
+          <div class="header__content">
+            <article class="weather-card">
+              <h3 class="weather-card__city">город</h3>
+              <span class="weather-card__degrees">градусы</span>
+              <span class="weather-card__feelslike">Чувствуется как:</span>
+              <span class="weather-card__clouds">облачно с прояснениями</span>
+              <span class="weather-card__humidity">влажность</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </header>
 
+    <script src="./js/script.js"></script>
+  </body>
 </html>

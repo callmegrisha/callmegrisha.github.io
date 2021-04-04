@@ -1,0 +1,193 @@
+/* -- font -- */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+/* -- font -- */
+
+/* -- reset -- */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -- reset -- */
+
+/* -- basic -- */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* -- basic -- */
+
+/* -- header -- */
+
+.header {
+  padding: 60px 0;
+  position: relative;
+  height: 100vh;
+  background-color: #ccc;
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.header__media {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header__inner {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* -- header -- */
+
+/* -- geo-form -- */
+.geo-form {
+}
+
+.header .geo-form {
+  margin-bottom: 50px;
+  font-size: 13px;
+}
+
+.geo-form * {
+  height: 50px;
+  border: none;
+  background-color: rgba(0%, 0%, 0%, 0.3);
+  color: white;
+  border-radius: 5px;
+}
+
+.geo-form *::placeholder {
+  color: white;
+}
+
+.geo-form__btn {
+  cursor: pointer;
+}
+
+/* -- geo-form -- */
+
+/* -- weather-card -- */
+
+.weather-card {
+  width: 100%;
+  min-height: 140px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
+  background-color: rgba(0%, 0%, 0%, 0.3);
+  color: white;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.weather-card *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.weather-card__city {
+  font-size: 60px;
+}
+
+.weather-card__feelslike {
+  display: block;
+}
+
+.weather-card__degrees {
+  display: block;
+  font-size: 25px;
+}
+
+.weather-card__clouds {
+  display: block;
+}
+
+/* -- weather-card -- */
