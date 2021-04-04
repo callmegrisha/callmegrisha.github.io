@@ -44,13 +44,13 @@ formBtnAdd.addEventListener('click', () => {
 
         if ((weatherDegrees.textContent).substring(0, (weatherDegrees.textContent).length - 1) > 10) {
           backgroundVideo.src = '';
-          backgroundVideo.src = './video/shine.mp4';
+          backgroundVideo.src = './video/shine.m4v';
         } else if ((weatherDegrees.textContent).substring(0, (weatherDegrees.textContent).length - 1) < 5) {
           backgroundVideo.src = '';
-          backgroundVideo.src = './video/snow(2).mp4';
+          backgroundVideo.src = './video/snow(2).m4v';
         } else {
           backgroundVideo.src = '';
-          backgroundVideo.src = './video/raining.mp4';
+          backgroundVideo.src = './video/raining.m4v';
         }
       });
 
