@@ -1,360 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glee | Log In</title>
-    <link rel="stylesheet" href="css/style.min.css">
-</head>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="header">
-
-    <div class="container">
-
+      <div class="container">
         <nav class="header__inner">
+          <a class="logo header__logo" href="#">
+            <img src="images/icons/logo.png" alt="logotype" />
+          </a>
 
-            <a class="logo header__logo" href="#">
-                <img src="images/icons/logo.png" alt="logotype">
-            </a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="https://callmegrisha.github.io/glee/"
+                >Home +</a
+              >
+            </li>
 
-            <ul class="menu">
+            <li class="menu__item">
+              <a
+                class="menu__link"
+                href="https://callmegrisha.github.io/glee/about"
+                >About</a
+              >
+            </li>
 
-                <li class="menu__item">
-                    <a class="menu__link" href="#">Home +</a>
-                </li>
+            <li class="menu__item">
+              <a
+                class="menu__link"
+                href="https://callmegrisha.github.io/glee/catalog"
+                >Catalog</a
+              >
+            </li>
 
-                <li class="menu__item">
-                    <a class="menu__link" href="#">About</a>
-                </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Pages +</a>
+            </li>
 
-                <li class="menu__item">
-                    <a class="menu__link" href="#">Services</a>
-                </li>
+            <li class="menu__item">
+              <a
+                class="menu__link"
+                href="https://callmegrisha.github.io/glee/articles"
+                >News</a
+              >
+            </li>
 
-                <li class="menu__item">
-                    <a class="menu__link" href="#">Pages +</a>
-                </li>
+            <li class="menu__item">
+              <a
+                class="menu__link"
+                href="https://callmegrisha.github.io/glee/contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
 
-                <li class="menu__item">
-                    <a class="menu__link" href="#">News</a>
-                </li>
-
-                <li class="menu__item">
-                    <a class="menu__link" href="#">Contact</a>
-                </li>
-
-            </ul>
-
-            <div class="user-nav">
-
-                <button class="user-nav__btn user-nav__btn--search" type="button">
-                    <svg width="16" height="16">
-                        <use xlink:href="images/icons/sprite.svg#search"></use>
-                    </svg>
-                </button>
-
-                <button class="user-nav__doublebtn user-nav__doublebtn--wish" type="button"> 
-                    <svg width="19" height="17">
-                        <use xlink:href="images/icons/sprite.svg#heart"></use>
-                    </svg>
-                    <span class="user-nav__num">0</span>
-                </button>
-
-                <button class="user-nav__doublebtn user-nav__doublebtn--basket" type="button">
-                    <svg width="19" height="17">
-                        <use xlink:href="images/icons/sprite.svg#cart"></use>
-                    </svg>
-                    <span class="user-nav__num">0</span>
-                </button>
-
-                <button class="user-nav__btn user-nav__btn--toggler" type="button">
-                    <svg width="21" height="21">
-                        <use xlink:href="images/icons/sprite.svg#grid"></use>
-                    </svg>
-                </button>
-
-            </div>
-
-            <button class="burger-btn" type="button">
-                <span></span>
+          <div class="user-nav">
+            <button class="user-nav__btn user-nav__btn--search" type="button">
+              <svg width="16" height="16">
+                <use xlink:href="images/icons/sprite.svg#search"></use>
+              </svg>
             </button>
 
+            <button
+              class="user-nav__doublebtn user-nav__doublebtn--wish"
+              type="button"
+            >
+              <svg width="19" height="17">
+                <use xlink:href="images/icons/sprite.svg#heart"></use>
+              </svg>
+              <span class="user-nav__num">0</span>
+            </button>
+
+            <button
+              class="user-nav__doublebtn user-nav__doublebtn--basket"
+              type="button"
+            >
+              <svg width="19" height="17">
+                <use xlink:href="images/icons/sprite.svg#cart"></use>
+              </svg>
+              <span class="user-nav__num">0</span>
+            </button>
+
+            <button class="user-nav__btn user-nav__btn--toggler" type="button">
+              <svg width="21" height="21">
+                <use xlink:href="images/icons/sprite.svg#grid"></use>
+              </svg>
+            </button>
+          </div>
+
+          <button class="burger-btn" type="button">
+            <span></span>
+          </button>
         </nav>
-
-    </div>
-
-</header>
+      </div>
+    </header>
 
     <main class="main">
+      <div class="top">
+        <h1 class="top__title">Log in</h1>
 
-        <div class="top">
-
-    <h1 class="top__title">Log in</h1>
-
-    <ul class="breadcrumbs">
-        
-        <li class="breadcrumbs__item">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="#">Home</a>
-        </li>
+          </li>
 
-        <li class="breadcrumbs__item">
-            <span class="breadcrumbs__link breadcrumbs__link--active">Log in</span>
-        </li>
-
-    </ul>
-
-</div>
-
-        <div class="auth">
-
-            <form class="auth-form" action="#">
-
-                <label class="auth-form__label">
-                    Username or email address *
-                    <input class="auth-form__input" type="text" required>
-                </label>
-
-                <label class="auth-form__label">
-                    Password *
-                    <input class="auth-form__input" type="password"  required>
-                </label>
-
-                <button class="auth-form__btn" type="submit">Login</button>
-
-                <div class="auth-form__pass">
-
-                    <label class="auth-form__label auth-form__label--checkbox">
-                        <input class="auth-form__input auth-form__input--checkbox" type="checkbox">
-                        Remember me
-                    </label>
-
-                    <a class="auth-form__forgot" href="#">Lost your password?</a>
-
-                </div>
-
-            </form>
-
-            <span class="auth__not-register">Not registered? No problem</span>
-
-            <a class="auth__create-acc" href="#">Create an account</a>
-
-        </div>
-
-
-        <section class="partners">
-
-    <div class="container container--small">
-
-        <ul class="partners__list">
-
-            <li class="partners__item">
-                <div class="partners__logo">
-                    <img src="images/partners/partner-1.png" alt="Peterson & Stephanie">
-                </div>
-            </li>
-
-            <li class="partners__item">
-                <div class="partners__logo">
-                    <img src="images/partners/partner-2.png" alt="KMN Konsulting">
-                </div>
-            </li>
-
-            <li class="partners__item">
-                <div class="partners__logo">
-                    <img src="images/partners/partner-3.png" alt="Chainforce">
-                </div>
-            </li>
-
-            <li class="partners__item">
-                <div class="partners__logo">
-                    <img src="images/partners/partner-4.png" alt="Nextg3n">
-                </div> 
-            </li>
-
-            <li class="partners__item">
-                <div class="partners__logo">
-                    <img src="images/partners/partner-5.png" alt="Vintage">
-                </div>
-            </li>
-
-            <li class="partners__item">
-                <div class="partners__logo">
-                    <img src="images/partners/partner-1.png" alt="Peterson & Stephanie">
-                </div>  
-            </li>
-
-            <li class="partners__item">
-                <div class="partners__logo">
-                    <img src="images/partners/partner-2.png" alt="KMN Konsulting">
-                </div>  
-            </li>
-
-            <li class="partners__item">
-                <div class="partners__logo">
-                    <img src="images/partners/partner-3.png" alt="Chainforce">
-                </div>
-            </li>
-
-            <li class="partners__item">
-                <div class="partners__logo">
-                    <img src="images/partners/partner-4.png" alt="Nextg3n">
-                </div>
-            </li>
-
-            <li class="partners__item">
-                <div class="partners__logo">
-                    <img src="images/partners/partner-5.png" alt="Vintage">
-                </div>
-            </li>
-
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__link breadcrumbs__link--active"
+              >Log in</span
+            >
+          </li>
         </ul>
+      </div>
 
-    </div>
+      <div class="auth">
+        <form class="auth-form" action="#">
+          <label class="auth-form__label">
+            Username or email address *
+            <input class="auth-form__input" type="text" required />
+          </label>
 
-</section>
+          <label class="auth-form__label">
+            Password *
+            <input class="auth-form__input" type="password" required />
+          </label>
 
+          <button class="auth-form__btn" type="submit">Login</button>
+
+          <div class="auth-form__pass">
+            <label class="auth-form__label auth-form__label--checkbox">
+              <input
+                class="auth-form__input auth-form__input--checkbox"
+                type="checkbox"
+              />
+              Remember me
+            </label>
+
+            <a class="auth-form__forgot" href="#">Lost your password?</a>
+          </div>
+        </form>
+
+        <span class="auth__not-register">Not registered? No problem</span>
+
+        <a class="auth__create-acc" href="#">Create an account</a>
+      </div>
+
+      <section class="partners">
+        <div class="container container--small">
+          <ul class="partners__list">
+            <li class="partners__item">
+              <div class="partners__logo">
+                <img
+                  src="images/partners/partner-1.png"
+                  alt="Peterson & Stephanie"
+                />
+              </div>
+            </li>
+
+            <li class="partners__item">
+              <div class="partners__logo">
+                <img src="images/partners/partner-2.png" alt="KMN Konsulting" />
+              </div>
+            </li>
+
+            <li class="partners__item">
+              <div class="partners__logo">
+                <img src="images/partners/partner-3.png" alt="Chainforce" />
+              </div>
+            </li>
+
+            <li class="partners__item">
+              <div class="partners__logo">
+                <img src="images/partners/partner-4.png" alt="Nextg3n" />
+              </div>
+            </li>
+
+            <li class="partners__item">
+              <div class="partners__logo">
+                <img src="images/partners/partner-5.png" alt="Vintage" />
+              </div>
+            </li>
+
+            <li class="partners__item">
+              <div class="partners__logo">
+                <img
+                  src="images/partners/partner-1.png"
+                  alt="Peterson & Stephanie"
+                />
+              </div>
+            </li>
+
+            <li class="partners__item">
+              <div class="partners__logo">
+                <img src="images/partners/partner-2.png" alt="KMN Konsulting" />
+              </div>
+            </li>
+
+            <li class="partners__item">
+              <div class="partners__logo">
+                <img src="images/partners/partner-3.png" alt="Chainforce" />
+              </div>
+            </li>
+
+            <li class="partners__item">
+              <div class="partners__logo">
+                <img src="images/partners/partner-4.png" alt="Nextg3n" />
+              </div>
+            </li>
+
+            <li class="partners__item">
+              <div class="partners__logo">
+                <img src="images/partners/partner-5.png" alt="Vintage" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-
     <footer class="footer">
-
-    <div class="container container--small">
-
+      <div class="container container--small">
         <div class="footer__top">
+          <div class="footer__column footer__column--contacts">
+            <a class="logo footer__logo" href="# ">
+              <img src="images/icons/logo.png" alt="logotype" />
+            </a>
 
-            <div class="footer__column footer__column--contacts">
+            <address class="footer__contacts">
+              <p><span>address</span>: 4772 Wines Lane Houston, TX 77032</p>
 
-                <a class="logo footer__logo" href="# ">
-                    <img src="images/icons/logo.png" alt="logotype">
-                </a>
+              <p>
+                <span>telephone</span>:
+                <a href="tel:+8323475843">+832-347-5843</a>
+              </p>
 
-                <address class="footer__contacts">
+              <p>
+                <span>email</span>:
+                <a href="mailto:contact@Glee.com ">contact@Glee.com</a>
+              </p>
+            </address>
+          </div>
 
-                    <p>
-                        <span>address</span>: 4772 Wines Lane
-                        Houston, TX 77032
-                    </p>
+          <div class="footer__column footer__column--services">
+            <div class="footer__title">services</div>
 
-                    <p><span>telephone</span>: <a href="tel:+8323475843">+832-347-5843</a></p>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="# ">About us</a>
+              </li>
 
-                    <p><span>email</span>: <a href="mailto:contact@Glee.com ">contact@Glee.com</a></p>
-                
-                </address>
+              <li class="footer__item">
+                <a class="footer__link" href="# ">Return Policy</a>
+              </li>
 
-            </div>
+              <li class="footer__item">
+                <a class="footer__link" href="# ">Our Blog</a>
+              </li>
 
-            <div class="footer__column footer__column--services">
+              <li class="footer__item">
+                <a class="footer__link" href="# ">Contact Us</a>
+              </li>
 
-                <div class="footer__title">services</div>
+              <li class="footer__item">
+                <a class="footer__link" href="# ">Terms & Condition</a>
+              </li>
+            </ul>
+          </div>
 
-                <ul class="footer__list">
+          <div class="footer__column footer__column--account">
+            <div class="footer__title">account</div>
 
-                    <li class="footer__item">
-                        <a class="footer__link" href="# ">About us</a>
-                    </li>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Your Account</a>
+              </li>
 
-                    <li class="footer__item">
-                        <a class="footer__link" href="# ">Return Policy</a>
-                    </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Checkout</a>
+              </li>
 
-                    <li class="footer__item">
-                        <a class="footer__link" href="# ">Our Blog</a>
-                    </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Login</a>
+              </li>
 
-                    <li class="footer__item">
-                        <a class="footer__link" href="# ">Contact Us</a>
-                    </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Register</a>
+              </li>
+            </ul>
+          </div>
 
-                    <li class="footer__item">
-                        <a class="footer__link" href="# ">Terms & Condition</a>
-                    </li>
+          <div class="footer__column footer__column--form">
+            <div class="footer__title">newsletter</div>
 
-                </ul>
+            <p class="footer__text">
+              Subscribe by our newsletter and get update protidin.
+            </p>
 
-            </div>
+            <form action="#" class="footer__form">
+              <label class="footer__label" for="email">Email address</label>
 
-            <div class="footer__column footer__column--account">
+              <input
+                class="footer__input"
+                name="subscribe[email]"
+                id="email"
+                type="email"
+                placeholder="Email address"
+              />
 
-                <div class="footer__title">account</div>
-
-                <ul class="footer__list">
-
-                    <li class="footer__item">
-                        <a class="footer__link" href="#">Your Account</a>
-                    </li>
-
-                    <li class="footer__item">
-                        <a class="footer__link" href="#">Checkout</a>
-                    </li>
-
-                    <li class="footer__item">
-                        <a class="footer__link" href="#">Login</a>
-                    </li>
-
-                    <li class="footer__item">
-                        <a class="footer__link" href="#">Register</a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <div class="footer__column footer__column--form">
-
-                <div class="footer__title">newsletter</div>
-
-                <p class="footer__text">
-                    Subscribe by our newsletter and get update protidin.
-                </p>
-
-                <form action="#" class="footer__form">
-
-                    <label class="footer__label" for="email">Email address</label>
-
-                    <input class="footer__input" name="subscribe[email]" id="email" type="email" placeholder="Email address">
-
-                    <button class="footer__btn" type="submit ">Subscribe</button>
-
-                </form>
-
-            </div>
-
+              <button class="footer__btn" type="submit ">Subscribe</button>
+            </form>
+          </div>
         </div>
 
         <div class="footer__bottom">
+          <p class="footer__copy">
+            ©2020 CopyRight Example. All rights reserved.
+          </p>
 
-            <p class="footer__copy">©2020 CopyRight Example. All rights reserved. </p>
+          <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Home</a>
+            </li>
 
-            <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">About</a>
+            </li>
 
-                <li class="footer__nav-item">
-                    <a class="footer__nav-link" href="#">Home</a>
-                </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Blog</a>
+            </li>
 
-                <li class="footer__nav-item">
-                    <a class="footer__nav-link" href="#">About</a>
-                </li>
-
-                <li class="footer__nav-item">
-                    <a class="footer__nav-link" href="#">Blog</a>
-                </li>
-
-                <li class="footer__nav-item">
-                    <a class="footer__nav-link" href="#">Contact</a>
-                </li>
-
-            </ul>
-
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Contact</a>
+            </li>
+          </ul>
         </div>
-
-    </div>
-
-</footer>
+      </div>
+    </footer>
 
     <script src="js/main.min.js"></script>
-</body>
-
+  </body>
 </html>
