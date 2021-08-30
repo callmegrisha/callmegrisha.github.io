@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glee | Catalog</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    @include('./common/header.html')
+
+    <main class="main">
+        
+        @loop('./common/breadcrumbs.html', [
+            {"top__title": "Product List", "link": "Home", "final__link": "Product List"}
+        ])
+
+        <section class="catalog">
+
+            <div class="container container--small">
+
+                <div class="catalog__inner">
+
+                    <div class="catalog__filters">
+
+                        <div class="filter">
+
+                            <h3 class="filter__title">Category</h3>
+
+                            <ul class="filter__categories">
+
+                                <li class="filter__categories-item">
+                                    <a class="filter__categories-link" href="#">Chair</a>
+                                </li>
+
+                                <li class="filter__categories-item">
+                                    <a class="filter__categories-link" href="#">Table</a>
+                                </li>
+
+                                <li class="filter__categories-item">
+                                    <a class="filter__categories-link" href="#">Lamp</a>
+                                </li>
+
+                                <li class="filter__categories-item">
+                                    <a class="filter__categories-link" href="#">Watch</a>
+                                </li>
+
+                                <li class="filter__categories-item">
+                                    <a class="filter__categories-link" href="#">Clock</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        
+                        <div class="filter">
+
+                            <h3 class="filter__title">Price</h3>
+
+                            <form class="filter__range" action="#">
+
+                                <input class="filter__range-input" type="text" 
+                                data-min="0"
+                                data-max="1000"
+                                data-from="100"
+                                data-to="500">
+
+                                <label class="filter__range-label">
+                                    <span class="filter__range-price">
+                                        <span class="filter__range-from"></span>
+                                        <span class="filter__range-to"></span>
+                                    </span>
+                                </label>
+
+                            </form>
+
+                        </div>
+
+                        <div class="filter">
+
+                            <h3 class="filter__title">Brand</h3>
+
+                            <form class="filter__brand-form" action="#" >
+
+                                <label class="filter__brand-label">
+                                    <input class="filter__brand-input" type="checkbox">
+                                    <div class="filter__brand-text">
+                                        <span class="filter__brand-name">RFL</span>
+                                        <span class="filter__brand-num">(10)</span>
+                                    </div>
+                                </label>
+
+                                <label class="filter__brand-label">
+                                    <input class="filter__brand-input" type="checkbox">
+                                    <div class="filter__brand-text">
+                                        <span class="filter__brand-name">Brothers</span>
+                                        <span class="filter__brand-num">(21)</span>
+                                    </div>
+                                </label>
+
+                                <label class="filter__brand-label">
+                                    <input class="filter__brand-input" type="checkbox">
+                                    <div class="filter__brand-text">
+                                        <span class="filter__brand-name">Regal</span>
+                                        <span class="filter__brand-num">(3)</span>
+                                    </div>
+                                </label>
+
+                                <label class="filter__brand-label">
+                                    <input class="filter__brand-input" type="checkbox">
+                                    <div class="filter__brand-text">
+                                        <span class="filter__brand-name">Nadia</span>
+                                        <span class="filter__brand-num">(14)</span>
+                                    </div>
+                                </label>
+
+                                <label class="filter__brand-label">
+                                    <input class="filter__brand-input" type="checkbox">
+                                    <div class="filter__brand-text">
+                                        <span class="filter__brand-name">Otobi</span>
+                                        <span class="filter__brand-num">(6)</span>
+                                    </div>
+                                </label>
+
+                            </form>
+
+                        </div>
+
+                        <div class="recent-products">
+
+                            <h3 class="filter__title">Recent Products</h3>
+
+                            <ul class="recent-products__list">
+
+                                <li class="recent-products__item">
+                                    <div class="recent-products__img">
+                                        <img src="images/recent-product-1.png" alt="pendant lamp">
+                                    </div>
+                                    <div class="recent-products__content">
+                                        <a class="recent-products__name" href="#">Pendant lamp</a>
+                                        <div class="recent-products__rating" data-rateyo-rating="4"></div>
+                                        <span class="recent-products__price">23$</span>
+                                    </div>
+                                </li>
+
+                                <li class="recent-products__item">
+                                    <div class="recent-products__img">
+                                        <img src="images/recent-product-2.png" alt="pendant lamp">
+                                    </div>
+                                    <div class="recent-products__content">
+                                        <a class="recent-products__name" href="#">Pendant lamp</a>
+                                        <div class="recent-products__rating" data-rateyo-rating="4"></div>
+                                        <span class="recent-products__price">23$</span>
+                                    </div>
+                                </li>
+
+                                <li class="recent-products__item">
+                                    <div class="recent-products__img">
+                                        <img src="images/recent-product-3.png" alt="pendant lamp">
+                                    </div>
+                                    <div class="recent-products__content">
+                                        <a class="recent-products__name" href="#">Pendant lamp</a>
+                                        <div class="recent-products__rating" data-rateyo-rating="4"></div>
+                                        <span class="recent-products__price">23$</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="catalog__content">
+
+                        <ul class="catalog__view">
+
+                            <li class="catalog__item">
+                                <button class="catalog__btn catalog__btn--list" type="button">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="images/icons/sprite.svg#list"></use>
+                                    </svg>
+                                </button>
+                            </li>
+
+                            <li class="catalog__item">
+                                <button class="catalog__btn catalog__btn--grid" type="button">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="images/icons/sprite.svg#grid-btn"></use>
+                                    </svg>
+                                </button>
+                            </li>
+
+                            <li class="catalog__item">
+                                <button class="catalog__btn catalog__btn--filter" type="button">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="images/icons/sprite.svg#filter"></use>
+                                    </svg>
+                                </button>
+                            </li>
+
+                        </ul>
+
+                        <div class="catalog__grid">
+                        
+                            @loop('./common/product-item.html', [
+                                    {
+                                        "productPath": "images/products/products-1.png",
+                                        "productName": "Wooden radio",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-2.png",
+                                        "productName": "Wooden chair",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-3.png",
+                                        "productName": "White chair",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-4.png",
+                                        "productName": "Retro Table",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-5.png",
+                                        "productName": "Wooden radio",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-6.png",
+                                        "productName": "Wooden chair",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-7.png",
+                                        "productName": "White chair",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-8.png",
+                                        "productName": "Retro Table",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-5.png",
+                                        "productName": "Wooden radio",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-6.png",
+                                        "productName": "Wooden chair",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-7.png",
+                                        "productName": "White chair",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-8.png",
+                                        "productName": "Retro Table",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    }
+                            ])
+
+                        </div>
+
+                    </div>
+
+                    
+
+                </div>
+
+                @include('./common/pagination.html')
+
+            </div>
+
+        </section>
+
+        @include('./common/blog.html')
+
+        @include('./common/partners.html')
+
+    </main>
+
+
+    @include('./common/footer.html')
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

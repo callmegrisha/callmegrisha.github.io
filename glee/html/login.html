@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glee | Log In</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    @include('./common/header.html')
+
+    <main class="main">
+
+        @loop('./common/breadcrumbs.html', [
+            {"top__title": "Log in", "link": "Home", "final__link": "Log in"}
+        ])
+
+        <div class="auth">
+
+            <form class="auth-form" action="#">
+
+                <label class="auth-form__label">
+                    Username or email address *
+                    <input class="auth-form__input" type="text" required>
+                </label>
+
+                <label class="auth-form__label">
+                    Password *
+                    <input class="auth-form__input" type="password"  required>
+                </label>
+
+                <button class="auth-form__btn" type="submit">Login</button>
+
+                <div class="auth-form__pass">
+
+                    <label class="auth-form__label auth-form__label--checkbox">
+                        <input class="auth-form__input auth-form__input--checkbox" type="checkbox">
+                        Remember me
+                    </label>
+
+                    <a class="auth-form__forgot" href="#">Lost your password?</a>
+
+                </div>
+
+            </form>
+
+            <span class="auth__not-register">Not registered? No problem</span>
+
+            <a class="auth__create-acc" href="#">Create an account</a>
+
+        </div>
+
+
+        @include('./common/partners.html')
+
+    </main>
+
+
+    @include('./common/footer.html')
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

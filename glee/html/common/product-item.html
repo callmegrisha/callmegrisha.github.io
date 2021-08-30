@@ -1,0 +1,47 @@
+<article class="product-item">
+
+    <div class="product-item__img">
+        <img src="@productPath" alt="chair"> 
+    </div>
+
+    <div class="product-item__icons">
+
+        <a class="product-item__btn product-item__btn--search" href="#">
+            <svg width="16" height="16">
+                <use xlink:href="images/icons/sprite.svg#search"></use>
+            </svg>
+        </a>
+
+        <button class="product-item__btn product-item__btn--cart">
+            <svg width="19" height="17">
+                <use xlink:href="images/icons/sprite.svg#cart"></use>
+            </svg>
+        </button>
+
+        <button class="product-item__btn product-item__btn--heart">
+            <svg width="19" height="17">
+                <use xlink:href="images/icons/sprite.svg#heart"></use>
+            </svg>
+        </button>
+
+    </div>
+
+    <div class="product-item__content">
+
+        <h3 class="product-item__title">
+            @productName
+        </h3>
+
+        <div class="product-item__rating" data-rateyo-rating="4"></div>
+
+        <div class="product-item__text">
+            <p>
+                @productDescription
+            </p>
+        </div>
+
+        <span class="product-item__price">@productPrice</span>
+
+    </div>
+
+</article>

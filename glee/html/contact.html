@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glee | Contact</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    @include('./common/header.html')
+
+    <main class="main">
+
+        @loop('./common/breadcrumbs.html', [
+            {"top__title": "Contact", "link": "Home", "final__link": "Contact"}
+        ])
+        
+        <section class="contact-us">
+            
+            <div class="container container--small">
+
+                <h2 class="title">
+                    <span>Write Here</span>
+                    Get In Touch
+                </h2>
+
+                <div class="contact-us__connect">
+
+                    <a class="contact-us__item" href="#">
+                        <div class="contact-us__img contact-us__img--address">
+                            <svg width="19" height="17">
+                                <use xlink:href="images/icons/sprite.svg#geo"></use>
+                            </svg>
+                        </div>
+                        <span>Address</span>
+                        <address>
+                            2416 Mapleview Drive Tampa, FL 33634
+                        </address>
+                    </a>
+
+                    <a class="contact-us__item" href="mailto:contact@website.com">
+                        <div class="contact-us__img contact-us__img--email">
+                            <svg width="19" height="17">
+                            <use xlink:href="images/icons/sprite.svg#input-letter"></use>
+                        </svg>
+                        </div>
+                        <span>Our Email</span>
+                        <p>
+                            Main Email : contact@website.com
+                            Inquiries : Info@mail.com
+                        </p>
+                    </a>
+
+                    <a class="contact-us__item" href="tel:0029129102320">
+                        <div class="contact-us__img contact-us__img--phone">
+                            <svg width="19" height="17">
+                            <use xlink:href="images/icons/sprite.svg#phone"></use>
+                        </svg>
+                        </div>
+                        <span>Our Phone</span>
+                        <p>
+                            Office Telephone : 0029129102320
+                            Mobile : 000 2324 39493
+                        </p>
+                    </a>
+                </div>
+
+                <div class="contact-us__request">
+
+                    <form class="request-form" action="#">
+                                
+                        <input class="request-form__input request-form__input--name" type="text" placeholder="Name" required>
+
+                        <input class="request-form__input request-form__input--email" type="email" placeholder="Email" required>
+
+                        <textarea class="request-form__text" name="#" cols="30" rows="10" placeholder="Message" required></textarea>
+                        
+                        <button class="request-form__btn" type="submit">Send Message</button>
+
+                    </form>
+
+                    <div id="map"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        @include('./common/partners.html')
+
+    </main>
+
+
+    @include('./common/footer.html')
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" defer></script>
+
+    <script>
+        let map;
+
+        function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: -95.41917617356005, lng: 29.98949955189646 },
+            zoom: 8,
+            styles: [
+                {
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "hue": "#ff4400"
+                        },
+                        {
+                            "saturation": -68
+                        },
+                        {
+                            "lightness": -4
+                        },
+                        {
+                            "gamma": 0.72
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.icon"
+                },
+                {
+                    "featureType": "landscape.man_made",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "hue": "#0077ff"
+                        },
+                        {
+                            "gamma": 3.1
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "stylers": [
+                        {
+                            "hue": "#00ccff"
+                        },
+                        {
+                            "gamma": 0.44
+                        },
+                        {
+                            "saturation": -33
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "stylers": [
+                        {
+                            "hue": "#44ff00"
+                        },
+                        {
+                            "saturation": -23
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "hue": "#007fff"
+                        },
+                        {
+                            "gamma": 0.77
+                        },
+                        {
+                            "saturation": 65
+                        },
+                        {
+                            "lightness": 99
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "gamma": 0.11
+                        },
+                        {
+                            "weight": 5.6
+                        },
+                        {
+                            "saturation": 99
+                        },
+                        {
+                            "hue": "#0091ff"
+                        },
+                        {
+                            "lightness": -86
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.line",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "lightness": -48
+                        },
+                        {
+                            "hue": "#ff5e00"
+                        },
+                        {
+                            "gamma": 1.2
+                        },
+                        {
+                            "saturation": -23
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "saturation": -64
+                        },
+                        {
+                            "hue": "#ff9100"
+                        },
+                        {
+                            "lightness": 16
+                        },
+                        {
+                            "gamma": 0.47
+                        },
+                        {
+                            "weight": 2.7
+                        }
+                    ]
+                }
+            ]
+        });
+        }
+    </script>
+    
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

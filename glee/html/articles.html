@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glee | Blog</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    @include('./common/header.html')
+
+    <main class="main">
+
+        @loop('./common/breadcrumbs.html', [
+            {"top__title": "Blog", "link": "Home", "final__link": "Blog"}
+        ])
+
+        <section class="articles">
+            
+            <div class="container container--small">
+
+                <div class="articles__inner">
+
+                    <div class="articles__content">
+
+                        @loop('./articles/articles__item.html', [
+                            {
+                                "articlesPath": "images/articles-item-1.jpg",
+                                "articlesAlt": "room",
+                                "articlesDate": "28 january, 2020",
+                                "articlesAuthor": "by admin",
+                                "articlesTitle": "Fonsectetur adipisicing  eiusmod",
+                                "articlesDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
+                            },
+                            {
+                                "articlesPath": "images/articles-item-2.jpg",
+                                "articlesAlt": "room",
+                                "articlesDate": "28 january, 2020",
+                                "articlesAuthor": "by admin",
+                                "articlesTitle": "Fonsectetur adipisicing  eiusmod",
+                                "articlesDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
+                            },
+                            {
+                                "articlesPath": "images/articles-item-3.jpg",
+                                "articlesAlt": "room",
+                                "articlesDate": "28 january, 2020",
+                                "articlesAuthor": "by admin",
+                                "articlesTitle": "Fonsectetur adipisicing  eiusmod",
+                                "articlesDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
+                            },
+                            {
+                                "articlesPath": "images/articles-item-4.jpg",
+                                "articlesAlt": "room",
+                                "articlesDate": "28 january, 2020",
+                                "articlesAuthor": "by admin",
+                                "articlesTitle": "Fonsectetur adipisicing  eiusmod",
+                                "articlesDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
+                            }
+                        ])
+
+                    </div>
+
+                    <div class="articles__navigation">
+
+                        <form class="search-form" action="#">
+                            <input class="search-form__input" type="text">
+                            <button class="search-form__btn" type="submit">
+                                <svg width="18" height="18">
+                                    <use xlink:href="images/icons/sprite.svg#loupe"></use>
+                                </svg>
+                            </button>
+                        </form>
+
+                        <div class="filter">
+
+                            <h3 class="filter__title">Category</h3>
+
+                            <ul class="filter__categories">
+
+                                <li class="filter__categories-item">
+                                    <a class="filter__categories-link" href="#">Chair</a>
+                                </li>
+
+                                <li class="filter__categories-item">
+                                    <a class="filter__categories-link" href="#">Table</a>
+                                </li>
+
+                                <li class="filter__categories-item">
+                                    <a class="filter__categories-link" href="#">Lamp</a>
+                                </li>
+
+                                <li class="filter__categories-item">
+                                    <a class="filter__categories-link" href="#">Watch</a>
+                                </li>
+
+                                <li class="filter__categories-item">
+                                    <a class="filter__categories-link" href="#">Clock</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="recent-posts">
+
+                            <h3 class="filter__title">Recent posts</h3>
+
+                            <ul class="recent-posts__list">
+
+                                <li class="recent-posts__item">
+
+                                    <div class="recent-posts__img">
+
+                                        <img src="images/recent-posts/1.jpg" alt="pendant lamp">
+
+                                    </div>
+
+                                    <div class="recent-posts__content">
+
+                                        <a class="recent-posts__name" href="#">Corem ipsum dolor tetur adipisicing elit</a>
+
+                                        <time class="blog-item__detail blog-item__detail--date">28 january, 2020</time>
+
+                                    </div>
+
+                                </li>
+
+                                <li class="recent-posts__item">
+
+                                    <div class="recent-posts__img">
+
+                                        <img src="images/recent-posts/2.jpg" alt="pendant lamp">
+
+                                    </div>
+
+                                    <div class="recent-posts__content">
+
+                                        <a class="recent-posts__name" href="#">Fdipisicing elit, sed do eiusmod tempor</a>
+
+                                        <time class="blog-item__detail blog-item__detail--date">28 january, 2020</time>
+
+                                    </div>
+
+                                </li>
+
+                                <li class="recent-posts__item">
+
+                                    <div class="recent-posts__img">
+
+                                        <img src="images/recent-posts/3.jpg" alt="pendant lamp">
+
+                                    </div>
+
+                                    <div class="recent-posts__content">
+
+                                        <a class="recent-posts__name" href="#">Eonsectetur adipisicing elit, sed do eiusmod </a>
+
+                                        <time class="blog-item__detail blog-item__detail--date">28 january, 2020</time>
+
+                                    </div>
+
+                                </li>
+
+                                <li class="recent-posts__item">
+
+                                    <div class="recent-posts__img">
+
+                                        <img src="images/recent-posts/4.jpg" alt="pendant lamp">
+
+                                    </div>
+
+                                    <div class="recent-posts__content">
+
+                                        <a class="recent-posts__name" href="#">gnim ad minim veniam, quis nostrud </a>
+
+                                        <time class="blog-item__detail blog-item__detail--date">28 january, 2020</time>
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                @include('./common/pagination.html')
+
+            </div>
+
+        </section>
+
+        @include('./common/partners.html')
+
+    </main>
+
+
+    @include('./common/footer.html')
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

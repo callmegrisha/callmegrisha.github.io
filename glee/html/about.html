@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glee | About Us</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    @include('./common/header.html')
+
+    <main class="main">
+
+        @loop('./common/breadcrumbs.html', [
+            {"top__title": "About Us", "link": "Home", "final__link": "About Us"}
+        ])
+
+        @include('./about/about-us.html')
+
+        @include('./about/statistics.html')
+
+        <section class="our-team">
+
+            <div class="container container--small">
+
+                <div class="our-team__inner">
+
+                    <div class="our-team__invite">
+
+                        <h2 class="title our-team__title">Our Team</h2>
+
+                        <div class="our-team__text">
+
+                            <p>
+                                Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusmod tempor inciLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+
+                        </div>
+
+                        <a class="our-team__btn" href="#">Join With US</a>
+
+                    </div>
+
+                    <div class="our-team__list">
+
+                        @loop('./about/our-team__person.html', [
+                            {
+                                "personPath": "images/team/1.jpg",
+                                "personAlt": "Eliza Elliot",
+                                "personName": "Eliza Elliot",
+                                "personPosition": "Commodo tempor"
+                            },
+                            {
+                                "personPath": "images/team/2.jpg",
+                                "personAlt": "Roscoe A.",
+                                "personName": "Roscoe A.",
+                                "personPosition": "Commodo tempor"
+                            },
+                            {
+                                "personPath": "images/team/3.jpg",
+                                "personAlt": "Ruby M.",
+                                "personName": "Ruby M.",
+                                "personPosition": "Commodo tempor"
+                            },
+                            {
+                                "personPath": "images/team/4.jpg",
+                                "personAlt": "Marie F. Bloss",
+                                "personName": "Marie F. Bloss",
+                                "personPosition": "Commodo tempor"
+                            }
+
+                        ])
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        @include('./common/blog.html')
+
+        @include('./common/partners.html')
+
+    </main>
+
+
+    @include('./common/footer.html')
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

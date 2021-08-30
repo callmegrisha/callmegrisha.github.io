@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glee</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    @include('./common/header.html')
+
+      <main class="main">
+
+        <h1 class="main-title">Welcome to Home page</h1>
+
+        @include('./home/slider-top.html')
+
+        <section class="products">
+
+            <div class="container container--small">
+
+                <div class="products__inner">
+
+                    <h2 class="title">Products of the week</h2>
+
+                    <ul class="tabs">
+
+                        <li class="tabs__item tabs__item--active" data-tab="product-1">
+                            All
+                        </li>
+
+                        <li class="tabs__item" data-tab="product-2">
+                            Furniture
+                        </li>
+
+                        <li class="tabs__item" data-tab="product-3">
+                            Chairs
+                        </li>
+
+                        <li class="tabs__item" data-tab="product-4">
+                            Lighting
+                        </li>
+
+                        <li class="tabs__item" data-tab="product-5">
+                            Decor
+                        </li>
+
+                    </ul>
+
+                    <div class="tabs__inner">
+
+                        <div class="tabs__content tabs__content--active" id="product-1">
+
+                            <div class="products__catalog">
+
+                                @loop('./common/product-item.html', [
+                                    {
+                                        "productPath": "images/products/products-1.png",
+                                        "productName": "Wooden radio",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-2.png",
+                                        "productName": "Wooden chair",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-3.png",
+                                        "productName": "White chair",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-4.png",
+                                        "productName": "Retro Table",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-5.png",
+                                        "productName": "Wooden radio",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-6.png",
+                                        "productName": "Wooden chair",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-7.png",
+                                        "productName": "White chair",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    },
+                                    {
+                                        "productPath": "images/products/products-8.png",
+                                        "productName": "Retro Table",
+                                        "productDescription": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                                        "productPrice": "$29.00"
+                                    }
+                                ])
+
+                            </div>
+
+                        </div>
+
+                        <div class="tabs__content" id="product-2">content-2</div>
+
+                        <div class="tabs__content" id="product-3">content-3</div>
+
+                        <div class="tabs__content" id="product-4">content-4</div>
+
+                        <div class="tabs__content" id="product-5">content-5</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="new-items">
+
+                <div class="container">
+
+                    <div class="new-items__inner">
+
+                        @loop('./common/new-item.html', [
+                            {
+                                "newItemPath": "images/promo-item-1.png",
+                                "newItemTitle": "Mirum Notare Tellus",
+                                "newItemDescription": "LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight"
+                            },
+                            {
+                                "newItemPath": "images/promo-item-2.png",
+                                "newItemTitle": "Malesuada Tempor Euismod",
+                                "newItemDescription": "50W 8000lm Compact Size for HID Street Light Replacement LED Corn Light"
+                            }
+                        ])
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="new-design">
+
+            <div class="container container--small">
+
+                <div class="new-design__inner">
+
+                    <h2 class="title">New Design</h2>
+
+                    <ul class="tabs">
+
+                        <li class="tabs__item tabs__item--active" data-tab="design-1">
+                            All
+                        </li>
+
+                        <li class="tabs__item" data-tab="design-2">
+                            Furniture
+                        </li>
+
+                        <li class="tabs__item" data-tab="design-3">
+                            Chairs
+                        </li>
+
+                        <li class="tabs__item" data-tab="design-4">
+                            Lighting
+                        </li>
+
+                        <li class="tabs__item" data-tab="design-5">
+                            Decor
+                        </li>
+
+                    </ul>
+
+                    <div class="tabs__inner">
+
+                        <div class="tabs__content tabs__content--active" id="design-1">
+
+                            <div class="new-design__catalog">
+
+                                @loop('./common/design-item.html', [
+                                    {
+                                        "designItemTitle": "Beat Flat Pendant Black",
+                                        "designItemSubtitle": "Classic",
+                                        "designItemPath": "images/design/design-1.png"
+                                    },
+                                    {
+                                        "designItemTitle": "Lampe Sur Pieds Bamboo",
+                                        "designItemSubtitle": "Classic",
+                                        "designItemPath": "images/design/design-2.png"
+                                    },
+                                    {   
+                                        "designItemChair": "design-item--chair",
+                                        "designItemTitle": "Rattan Rocking Chair",
+                                        "designItemSubtitle": "Classic",
+                                        "designItemPath": "images/design/design-3.png"
+                                    },
+                                    {
+                                        "designItemTitle": "Rattan Rocking Chair",
+                                        "designItemSubtitle": "Classic",
+                                        "designItemPath": "images/design/design-4.png"
+                                    },
+                                    {
+                                        "designItemChair": "design-item--chair",
+                                        "designItemTitle": "Rattan Rocking Chair",
+                                        "designItemSubtitle": "Classic",
+                                        "designItemPath": "images/design/design-5.png"
+                                    },
+                                    {
+                                        "designItemTitle": "Lampe Sur Pieds Bamboo",
+                                        "designItemSubtitle": "Classic",
+                                        "designItemPath": "images/design/design-6.png"
+                                    }
+                                    
+                                ])
+
+                            </div>
+
+                        </div>
+
+                        <div class="tabs__content" id="design-2">content-2</div>
+
+                        <div class="tabs__content" id="design-3">content-3</div>
+
+                        <div class="tabs__content" id="design-4">content-4</div>
+
+                        <div class="tabs__content" id="design-5">content-5</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="video" style="background-image: url('images/video-bg.jpg');">
+
+                <a data-fancybox class="video__link" href="https://www.youtube.com/watch?v=NLAk4nfvfqU&ab_channel=AndresVidoza">
+                </a>
+
+            </div>
+
+        </section>
+
+        @include('./common/blog.html')
+
+        @include('./common/partners.html')
+
+    </main>
+
+
+    @include('./common/footer.html')
+
+    <script src="js/main.min.js"></script>
+</body>
