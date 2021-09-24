@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bot</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="dashboard">
+      <div class="dashboard__nav">
+        <nav class="nav">
+          <div class="nav__search">
+            <div class="nav__icon">
+              <img src="images/search-icon.png" alt="Search Icon">
+            </div>
+            <div class="nav__form">
+              <input class="nav__input input" type="search" placeholder="Search new chat">
+              <button class="nav__btn btn" type="button">
+                <svg width="23" height="23">
+                  <use xlink:href="images/icons/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="nav__chats">
+            <span class="nav__title">Chats</span>
+            <div class="nav__list">
+              <div class="bot">
+                <div class="bot__avatar bot-avatar">
+                  <img src="images/bot-avatar.png" alt="Avatar">
+                </div>
+                <div class="bot__info">
+                  <span class="bot__name">Kristopher Candy</span>
+                  <span class="bot__desc">Cake pie jelly</span>
+                </div>
+                <span class="bot__date">4:14 PM</span>
+              </div>
+              <div class="bot">
+                <div class="bot__avatar bot-avatar">
+                  <img src="images/bot-avatar.png" alt="Avatar">
+                </div>
+                <div class="bot__info">
+                  <span class="bot__name">Kristopher Candy</span>
+                  <span class="bot__desc">Cake pie jelly</span>
+                </div>
+                <span class="bot__date">4:14 PM</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="dashboard__body">
+        <div class="dashboard__header">
+          <button class="burger btn" type="button">
+            <svg width="36" height="36">
+              <use xlink:href="images/icons/sprite.svg#burger"></use>
+            </svg>
+          </button>
+          <span class="bot__name">Intel Bot</span>
+          <button class="search-btn btn">
+            <svg width="36" height="36">
+              <use xlink:href="images/icons/sprite.svg#search-line"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="dashboard__content">
+          <div class="bot-window">
+            <div class="bot-window__img">
+              <img src="images/bot-avatar-big.png" alt="Avatar">
+            </div>
+            <h3 class="bot-window__title">Intel bot</h3>
+            <div class="bot-window__actions">
+              <button class="bot-window__action btn">
+                <svg width="69" height="69">
+                  <use xlink:href="images/icons/sprite.svg#mic-line"></use>
+                </svg></button>
+              <button class="bot-window__action btn">
+                <svg width="69" height="69">
+                  <use xlink:href="images/icons/sprite.svg#message-icon"></use>
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
